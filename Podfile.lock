@@ -1,0 +1,22 @@
+PODS:
+  - Random (0.0.1)
+  - ShoppingData (0.0.1):
+    - ShoppingModels (= 0.0.2)
+  - ShoppingModels (0.0.2)
+
+DEPENDENCIES:
+  - Random (= 0.0.1)
+  - ShoppingData (from `./`)
+
+EXTERNAL SOURCES:
+  ShoppingData:
+    :path: ./
+
+SPEC CHECKSUMS:
+  Random: e58fdc403402e8fbed2970887a2c605dd6f61d51
+  ShoppingData: 643f9b122663a757add45f90c8bff51830ae7762
+  ShoppingModels: ac55688ece720afae7fb2de034088448ff7d4213
+
+PODFILE CHECKSUM: ee3e31b03f23ce51873d4d123f59fe0916a27a5a
+
+COCOAPODS: 1.1.1

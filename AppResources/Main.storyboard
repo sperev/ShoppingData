@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gzo-Na-mR2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hCM-XZ-YqZ">
+            <objects>
+                <navigationController id="Gzo-Na-mR2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3OM-tR-b8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Sa5-CI-mbR" kind="relationship" relationship="rootViewController" id="2vb-UX-ApR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpW-NN-E2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1470" y="12"/>
+        </scene>
+        <!--ShoppingLists-->
+        <scene sceneID="Vdz-Ez-XvC">
+            <objects>
+                <viewController id="Sa5-CI-mbR" customClass="ViewController" customModule="ShoppingLists" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="ShoppingLists" id="sPb-FJ-U3v">
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="cmd-9j-d4q">
+                                <connections>
+                                    <action selector="refresh" destination="Sa5-CI-mbR" id="qOL-V2-IZ2"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Account" id="g8w-Mp-fcO">
+                                <connections>
+                                    <action selector="account" destination="Sa5-CI-mbR" id="A3n-j1-agn"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TtW-qJ-xam">
+                            <connections>
+                                <action selector="add" destination="Sa5-CI-mbR" id="H7w-rq-zpZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnO-ul-2HY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="11"/>
+        </scene>
+    </scenes>
+</document>
